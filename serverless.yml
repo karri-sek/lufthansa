@@ -1,5 +1,5 @@
 
-service: lgremote
+service: lufthansa-dev
 
 provider:
   name: aws
@@ -20,10 +20,10 @@ package:
   individually: true
 
 functions:
-  lgRemote:
+  lufthansa-dev:
     handler: lambda/index.handler
-    name: remotelambda
-    description: lgremote by (Alexa Skill)
+    name: lufthansa-dev
+    description: lufthansa-dev by (Alexa Skill)
     events:
       - alexaSkill
     environment:
@@ -36,9 +36,9 @@ custom:
   regions:
     babusek: us-east-1
   roles:
-    babusek: arn:aws:iam::501147292974:role/babusek
+    babusek: arn:aws:iam::501147292974:role/service-role/Lufthansa-dev
   appids:
-    babusek: ${file(env.yml):APP_ID_BABUSEK}
+    babusek: ${file(env.yml):SKILL_ID}
   optimize:
     debug: false # set to true to keep _optimize folder
     minify: false # only saves 0.02mb in this case

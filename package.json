@@ -1,10 +1,10 @@
 {
-  "name": "lgremote-alexa-skill",
+  "name": "Lufthansa-dev",
   "version": "3.0.0",
-  "description": "Lg remote (Alexa Skill)",
+  "description": "Lufthansa (Alexa Skill)",
   "main": "index.js",
   "scripts": {
-    "ud:sekhar": "serverless deploy function -f lgRemote --stage babusek"
+    "ud:sekhar": "serverless deploy function -f lufthansa-dev --stage babusek"
   },
   "author": "Sekhar",
   "dependencies": {
